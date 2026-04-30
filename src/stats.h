@@ -1,5 +1,7 @@
 // stats.h
 // Function prototypes and types for statistical operations on integer arrays.
+#ifndef STATS_H
+#define STATS_H
 
 // Summary of results from a full analysis of an array.
 typedef struct {
@@ -12,3 +14,5 @@ float      calculate_mean(int *arr, int length);
 int        find_max(int *arr, int length);
 int        count_duplicates(int *arr, int length);
 ArrayStats analyse(int *arr, int length);
+
+#endif
